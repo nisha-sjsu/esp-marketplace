@@ -12,14 +12,14 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-import environ
+# import environ
 
 BASE_DIR=Path(__file__).resolve(strict=True).parent.parent
 MEDIA_URL='/photos/'
 MEDIA_ROOT=os.path.join(BASE_DIR,"photos")
 
-env = environ.Env()
-environ.Env.read_env()
+# env = environ.Env()
+# environ.Env.read_env()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -87,7 +87,7 @@ DATABASES = {
     "default": {
         "ENGINE": "djongo",
         "CLIENT": {
-            "host" : "mongodb+srv://{}:{}@cluster0.waeg9.mongodb.net/?retryWrites=true&w=majority".format(env('MONGODB_USERNAME'), env('MONGODB_PASSWORD')),
+            "host" : "mongodb+srv://aishwarya:Aish@cluster0.gxt243f.mongodb.net/?retryWrites=true&w=majority",
             "name" : "espDB",
             "authMechanism" : "SCRAM-SHA-1"
         },
