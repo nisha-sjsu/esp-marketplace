@@ -24,7 +24,7 @@ export default function Favorites() {
     axios.get("/item")
       .then((res) => {
         data = res.data;
-        axios.get("/favitem",{ params :{ userId : 'Aishwarya'}})
+        axios.get("/favitem",{ params :{ userId : 'Tom'}})
         .then((res) => {
           let currData = res.data;
           let fav = []

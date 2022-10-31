@@ -20,10 +20,10 @@ export default function BuyerPage() {
       })
       .catch((err) => {});
       getUserItems()
-  },[]);
+  },[likedItems]);
 
 const getUserItems = () =>{
-  axios.get("/favitem?userId=Aishwarya")
+  axios.get("/favitem?userId=Tom")
     .then(res=>{
         let data = res.data[0];
         //data has fitemId array and userID
